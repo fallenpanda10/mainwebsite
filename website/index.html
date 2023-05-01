@@ -1,0 +1,122 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>MarcoDaPanda</title>
+<style>
+    body {
+        background-image: url('img/linktreebackground.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+color: #fff;
+font-family: 'Open Sans', sans-serif;
+font-size: 15px;
+letter-spacing: 2px;
+}
+img {
+border-radius: 50%;
+}
+.profile-picture {
+display: block;
+margin-left: auto;
+margin-right: auto;
+margin-top: 10%;
+height: auto;
+max-width: 100px;
+}
+.profile-name {
+text-align: center;
+padding: 30px;
+}
+.links {
+text-align: center;
+margin-top: 20px;
+padding: 20px;
+border: 1px solid white;
+border-width: 2px;
+width: 290px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+border-radius: 40px;
+}
+a {
+text-decoration: none;
+color: white;
+transition: color 1s;
+}
+.bottom-text {
+text-align: center;
+margin-top: 40px;
+font-size: 20px;
+font-weight: bold;
+}
+a:hover {
+color: #000;
+background: #fff;
+}
+</style>
+</head>
+<body>
+     <!--Start of my navigation design-->
+     <div class="menu" id="mymainmenu">
+        <a class="active" href="index.html">
+            Home
+        </a>
+        <!--This is a dropdown menu for Tech Repair in the Navigation-->
+        <div class="dropdown">
+            <button class="dropbtn">Tech Repair
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="apple.html">Apple</a>
+              <a href="android.html">Android</a>
+              <a href="#">Other</a>
+            </div>
+          </div> 
+        <!-- End of dropdown menu  for Tech Repair on the Navigation-->
+        <a  href="https://www.ebay.com/usr/pandascomix" target="_blank">
+            Ebay Store
+        </a>
+        <a href="about2.0.html">
+            About
+        </a>
+        <a href="contact.html">
+            Contact
+        </a>
+        <!--- this will make the website moible-->
+        <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+            </div>
+        <!--This is the end of the mobile website-->
+    <!--End of Navigation design-->
+
+    <br>
+
+<!-- Profile picture-->
+<img src="img/pfp.png" alt="profile picture" class="profile-picture">
+<!-- Profile name-->
+<div class="profile-name">@MarcoDaPanda</div>
+<!-- Links-->
+<a href="https://www.twitch.tv/marcodapanda" target="_blank" class="links">Twitch</a>
+<a href="https://www.instagram.com/marcodapanda" target="_blank" class="links">Instagram</a>
+<a href="https://www.twitter.com/marcodapanda" target="_blank" class="links">Twitter</a>
+<a href="https://www.youtube.com/@marcodapanda" target="_blank" class="links">Youtube</a>
+<!-- Logo -->
+<div class="bottom-text">Part Of ©TekkuNetwork</div>
+
+  <!--This function is what makes the web go to desktop to mobile view-->
+  <script>
+    function myFunction() {
+      var x = document.getElementById("mymainmenu");
+      if (x.className === "menu") {
+        x.className += " responsive";
+      } else {
+        x.className = "menu";
+      }
+    }
+    </script>
+<!--This the end of this function-->
+</body>
+</html>

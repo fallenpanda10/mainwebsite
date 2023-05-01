@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+    <html lang="English">
+        <head>
+            <title>Android Repair</title>
+            <link rel="stylesheet" href="style.css">
+            <link charset="UTF-8">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        </head>
+
+        <body>
+            <!--Start of my navigation design-->
+                <div class="menu" id="mymainmenu">
+                <a class="active" href="index.html">
+                    Home
+                </a>
+                <!--This is a dropdown menu for Tech Repair in the Navigation-->
+                <div class="dropdown">
+                    <button class="dropbtn">Tech Repair
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="apple.html">Apple</a>
+                      <a href="android.html">Android</a>
+                      <a href="#">Other</a>
+                    </div>
+                  </div> 
+                <!-- End of dropdown menu  for Tech Repair on the Navigation-->
+                <a  href="https://www.ebay.com/usr/pandascomix" target="_blank">
+                    Ebay Store
+                </a>
+                <a href="about2.0.html">
+                    About
+                </a>
+                <a href="contact.html">
+                    Contact
+                </a>
+                <!--- this will make the website moible-->
+                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+                    </div>
+                <!--This is the end of the mobile website-->
+            <!--End of Navigation design-->
+
+            <!--The content of the website starts here-->
+            <!--Title of the Website-->
+            <h1 style="text-align: center; color: White;">Android Repair</h1>
+
+            <hr>
+<!--This is the search bar-->
+<input id="searchbar" onkeyup="search_panel()" type="text"
+name="search" placeholder="Search Android..">
+<!--End of search bar-->
+
+            <h1 style="text-align: center; color: White">THIS IS A WORK IN PROGRESS!!!!</h1>
+            <!--End of the title of the Website-->
+
+            <h4 style="color: white;">Note: Repairs are only avalible if you live in the L.A County Area. Thank you for understanding.</h4>
+
+            <br>
+        
+
+        <br>
+        <br>
+
+<ol class="no-bullets" id='list'>
+  <li class="panel">
+            <div class="product">
+              <img src="img/pixel3a.png" alt="Google Pixel 3a" style="width:100%">
+              <h1 style="color: azure;">Google Pixel 3a</h1>
+              <p class="price">$30-$100</p>
+              <p style="color: white;">Pixel 3a Screen, Charging, And Battery Replacement</p>
+              <p><button>View</button></p>
+            </div>
+</li>
+            <br>
+
+            <li class="panel">
+            <div class="product">
+              <img src="img/s22.jpg" alt="Samsung Galaxy S22" style="width:100%">
+              <h1 style="color: azure;">Samsung Galaxy S22</h1>
+              <p class="price">$30-$100</p>
+              <p style="color: white;">Galaxy S22 Screen, Charging, And Battery Replacement</p>
+              <p><button>View</button></p>
+            </div>
+            </li>
+
+            <br>
+
+            <li class="panel">
+            <div class="product">
+              <img src="img/s20.jpg" alt="Samsung Galaxy S20" style="width:100%">
+              <h1 style="color: azure;">Samsung Galaxy S20</h1>
+              <p class="price">$30-$100</p>
+              <p style="color: white;">Galaxy S20 Screen, Charging, And Battery Replacement</p>
+              <p><button>View</button></p>
+            </div>
+
+            </li>
+            </ol>
+
+
+            <footer>
+              <p>marcoaguilar084@protonmail.com<br>
+              <a href="mailto:hege@example.com">Part Of ©Tekku Network</a></p>
+            </footer>
+
+
+            <!--This function is what makes the web go to desktop to mobile view-->
+            <script>
+                function myFunction() {
+                  var x = document.getElementById("mymainmenu");
+                  if (x.className === "menu") {
+                    x.className += " responsive";
+                  } else {
+                    x.className = "menu";
+                  }
+                }
+                </script>
+            <!--This the end of this function-->
+
+             <!-- linking javascript search -->
+    <script>function search_panel() {
+    let input = document.getElementById('searchbar').value
+    input=input.toLowerCase();
+    let x = document.getElementsByClassName('panel');
+      
+    for (i = 0; i < x.length; i++) { 
+        if (!x[i].innerHTML.toLowerCase().includes(input)) {
+            x[i].style.display="none";
+        }
+        else {
+            x[i].style.display="list-item";                 
+        }
+    }
+} </script>
+        </body>
+
+    </html>

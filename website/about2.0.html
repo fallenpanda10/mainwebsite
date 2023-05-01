@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+  <html lang="English">
+    <head>
+        <title>About Me</title>
+        <meta charset="UTF=8">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <!--Start of my navigation design-->
+        <div class="menu" id="mymainmenu">
+            <a class="active" href="index.html">
+                Home
+            </a>
+            <!--This is a dropdown menu for Tech Repair in the Navigation-->
+            <div class="dropdown">
+                <button class="dropbtn">Tech Repair
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="apple.html">Apple</a>
+                  <a href="android.html">Android</a>
+                  <a href="#">Other</a>
+                </div>
+              </div> 
+            <!-- End of dropdown menu  for Tech Repair on the Navigation-->
+            <a  href="https://www.ebay.com/usr/pandascomix" target="_blank">
+                Ebay Store
+            </a>
+            <a href="about.html">
+                About
+            </a>
+            <a href="contact.html">
+                Contact
+            </a>
+            <!--- this will make the website moible-->
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+                </div>
+            <!--This is the end of the mobile website-->
+        <!--End of Navigation design-->
+<br>
+        <!--Profile Card-->
+        <div class="card">
+            <img src="img/fullbodyvtuber.png" alt="Marco" style="width:70%">
+            <h1 style="color: azure;">Marco A. Aguilar</h1>
+            <p class="title">CEO & Founder</p>
+            <p style="color: azure;">©TekkuNetwork</p>
+            <div style="margin: 24px 0;">
+              <a href="https://www.instagram.com/marcodapanda" target="_blank"><i class="fa fa-instagram"></i></a> 
+              <a href="https://www.twitter.com/marcodapanda" target="_blank"><i class="fa fa-twitter"></i></a>  
+              <a href="https://www.youtube.com/@marcodapanda" target="_blank"><i class="fa fa-youtube"></i></a>  
+              <a href="https://www.twitch.tv/marcodapanda" target="_blank"><i class="fa fa-twitch"></i></a> 
+            </div>
+            <p><button class="btn">More</button></p>
+          </div>
+
+          <br>
+
+          <footer>
+            <p>marcoaguilar084@protonmail.com<br>
+            <a href="mailto:hege@example.com">Part Of ©Tekku Network</a></p>
+          </footer>
+
+           <!--This function is what makes the web go to desktop to mobile view-->
+           <script>
+            function myFunction() {
+              var x = document.getElementById("mymainmenu");
+              if (x.className === "menu") {
+                x.className += " responsive";
+              } else {
+                x.className = "menu";
+              }
+            }
+            </script>
+        <!--This the end of this function-->
+    </body>
+  </html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+    <html lang="English">
+        <head>
+            <title>MarcoDaPanda</title>
+            <link rel="stylesheet" href="style.css">
+            <link charset="UTF-8">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+        </head>
+
+        <body>
+            <!--Start of my navigation design-->
+                <div class="menu" id="mymainmenu">
+                <a class="active" href="index.html">
+                    Home
+                </a>
+                <!--This is a dropdown menu for Tech Repair in the Navigation-->
+                <div class="dropdown">
+                    <button class="dropbtn">Tech Repair
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="apple.html">Apple</a>
+                      <a href="android.html">Android</a>
+                      <a href="#">Other</a>
+                    </div>
+                  </div> 
+                <!-- End of dropdown menu  for Tech Repair on the Navigation-->
+                <a  href="https://www.ebay.com/usr/pandascomix" target="_blank">
+                    Ebay Store
+                </a>
+                <a href="about.html">
+                    About
+                </a>
+                <a href="contact.html">
+                    Contact
+                </a>
+                <!--- this will make the website moible-->
+                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+                    </div>
+                <!--This is the end of the mobile website-->
+            <!--End of Navigation design-->
+
+            <!--The content of the website starts here-->
+            <!--Title of the Website-->
+            <h1 style="text-align: center;">About</h1>
+            <!--End of the title of the Website-->
+            
+            <p>Note: This is my Resume</p>
+            <br>
+      <header>
+            <h2>Marco Aguilar</h2>
+            <p>Motivated to learn, grow, and excel. Consistently-selrewarded in planning and 
+               operational improvements. Experience in policy development and staff management produres positively
+               impacting overall morale and productivity.
+            </p>
+      </header>      
+            
+      <hr>
+   <nav class="submenu"> 
+      <a id="subbutton" class="subbutton" href="#exp">Experience</a>
+      <a id="subbutton" class="subbutton" href="#edu">Education</a>
+      <a id="subbutton" class="subbutton" href="#skill">Skills</a>
+      <a id="subbutton" class="subbutton" href="#achieved">Accomplishments</a>
+      <a id="subbutton" class="subbutton" href="#langu">Languages</a>
+       <a id="subbutton" class="subbutton" href="#intrest">Intrerests</a>
+   </nav>    
+      <hr>
+
+   <main class="content">
+
+    <div class="example">
+            <h5 id="exp">Experience</h5>
+            <p>Amazon Associate at Amazon Fresh Fulfillment Center</p>
+            <p>Crew Member at Five Guys Burgers And Fries</p>
+            <p>Retail Associate at Pow Splat Bam Collectible Comics</p>
+            <p>Cashier At Kentucky Fried Chicken(KFC)</p>
+            <p>Food Handler Card</p>
+          </div>
+
+            <br>
+
+          <div class="example">
+            <h5 id="edu">Education</h5>
+            <P>Animo Jackie Robinson High School, Los Angeles - High School diploma</P>
+            <p>California State University, Fresno - Some College</p>
+            <p>Online Coursera By Google I.T Courses- I.T Certificate</p>
+          </div>
+
+            <br>
+
+            <h5 id="skill">Skills</h5>
+          <div class="example">
+            <p>Process Improvement</p>
+            <p>Communications</p>
+            <p>Fast Learner</p>
+            <p>Team Building</p>
+            <p>Microsoft Office</p>
+            <p>Google Docs, Sheets, Slides</p>
+            <p>Basic Knowlege of Linux <a href="https://coursera.org/share/3e913cef588e5ad7f276395b8b42f725" target="_blank">(Link)</a></p>
+            <p>Knowlege in I.T <a href="https://coursera.org/share/4e7da25ee95f19c0f5a2507df12e4805" target="_blank">(Link)</a></p>
+          </div>
+
+            <br>
+    
+          <div class="example">
+            <h5 id="achieved">Accomplishments</h5>
+            <p>Ran and Completed The L.A Marathon In 2020</p>
+            <p>I was able to improve the ambiance of my high school when I was part of the student government</p>
+          </div>
+            <br>
+
+          <div class="example">
+            <h5 id="langu">LANGUAGES</h5>
+            <p>English - Fluent</p>
+            <p>Spanish - Fluent</p>
+            <p>Japanese - Intermediate</p>
+          </div>
+            <br>
+
+          <div class="example">
+            <h5 id="intrest">Intrerests</h5>
+            <p>Eager to learn</p>
+            <p>Tech Nerd</p>
+            <p>Reading Books</p>
+            <p>Set Goals For Myself</p>
+            <p>Help people solve their problems</p>
+            <p>Influence or Persuade People</p>
+            <p>Learning About Cultures</p>
+            <p>Cook</p>
+            <p>Analyzing Problems, Situations Or Trends</p>
+          </div>
+      </main>
+
+            <!--This function is what makes the web go to desktop to mobile view-->
+            <script>
+                function myFunction() {
+                  var x = document.getElementById("mymainmenu");
+                  if (x.className === "menu") {
+                    x.className += " responsive";
+                  } else {
+                    x.className = "menu";
+                  }
+                }
+                </script>
+            <!--This the end of this function-->
+      
+        </body>
+
+    </html>

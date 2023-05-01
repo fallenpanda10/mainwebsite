@@ -1,0 +1,150 @@
+<DOCTYPE html>
+    <html lang="English">
+        <head>
+            <title>Contact</title>
+            <link charset="UTF-8">
+            <meta name="viewport" content="width=divice-width, initial-scale=1">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="style.css">
+            <style>
+              * {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+            </style>
+        </head>
+
+        <body>
+             <!--Start of my navigation design-->
+             <div class="menu" id="mymainmenu">
+                <a class="active" href="index.html">
+                    Home
+                </a>
+                <!--This is a dropdown menu for Tech Repair in the Navigation-->
+                <div class="dropdown">
+                    <button class="dropbtn">Tech Repair
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="apple.html">Apple</a>
+                      <a href="android.html">Android</a>
+                      <a href="#">Other</a>
+                    </div>
+                  </div> 
+                <!-- End of dropdown menu  for Tech Repair on the Navigation-->
+                <a  href="https://www.ebay.com/usr/pandascomix" target="_blank">
+                    Ebay Store
+                </a>
+                <a href="about2.0.html">
+                    About
+                </a>
+                <a href="contact.html">
+                    Contact
+                </a>
+                <!--- this will make the website moible-->
+                <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+                    </div>
+                <!--This is the end of the mobile website-->
+            <!--End of Navigation design-->
+
+            <!--The content of the website starts here-->
+<!--Here is the Content of the Website-->
+   
+<div class="container">
+  <div style="text-align:center">
+    <h2>Contact Us</h2>
+    <p> leave us a message:</p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="img/tekku.png" style="width:100%">
+    </div>
+    <div class="column">
+      <form action="https://formsubmit.co/marcoaguilar084@protonmail.com" method="POST">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" placeholder="Your Email..">
+        <label for="subject">Question, Comments, And Feedback</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+
+<br>
+
+<footer>
+  <p>marcoaguilar084@protonmail.com<br>
+  <a href="mailto:hege@example.com">Part Of ©Tekku Network</a></p>
+</footer>
+
+            <!--This function is what makes the web go to desktop to mobile view-->
+            <script>
+                function myFunction() {
+                  var x = document.getElementById("mymainmenu");
+                  if (x.className === "menu") {
+                    x.className += " responsive";
+                  } else {
+                    x.className = "menu";
+                  }
+                }
+                </script>
+            <!--This the end of this function-->
+        </body>
+
+    </html>
